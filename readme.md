@@ -33,7 +33,8 @@
 - `namespace` 
   - Organiza classes
   - Elementos e afins... por pastas
-- ``args`` Array que recebe argumentos de entradas strings
+- ``args`` 
+  - Array que recebe argumentos de entradas strings
 - Diferença entre ***Write*** e ***WriteLine*** 
   - É que o último quebra a linha para debaixo (tipo dá um enter)
 
