@@ -64,6 +64,11 @@
 - **Todas as variáveis abaixo são locais ao método** `Main()`
 - `Var` 
   - Operador
+  - Não é tipada
+  - Recebe a tipagem na atribuição
+  - Excessão:
+    - Ex: `var aux = nome;` O seu valor é capturado da variável `nome `do Tipo String.
+  - Não pode ser alterada depois.
 - **Variáveis** 
   - Posição reservada na memória RAM. 
   - Armazena dados(informações)
