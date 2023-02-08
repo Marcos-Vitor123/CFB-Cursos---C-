@@ -2,15 +2,12 @@ using System;
 
 class Aula03{
   static void Main(){
-    byte n1=10; // 0 a 255
-    int num=0;
-    char letras = '8';
-    float valor = 5.3f;
-    string nome = "Bruno";
+    int num1, num2, res;
 
-    var aux=nome;
+    num1=10;
+    num2=2;
+    res = num1 * num2;
 
-    Console.WriteLine("Valor da variável: " + aux + "...");
+    Console.WriteLine("A multiplicação de " + num1 + " Com " + num2 + " é igual a: " + res);
   }
 }
-
