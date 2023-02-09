@@ -5,10 +5,10 @@
 - `Using System;` 
   - Biblioteca básica com comandos de entradas e saídas e afins...
 - **Principal** 
-  - Nome dado a class ou programa 
+  - Nome dado apenas a essa class ou programa da aula
 - `Main()` 
   - Método Principal dessa class
-  - É o ponto de entrada de um aplicativo C#, exceto em Bibliotecas e serviços.
+  - É o ponto de entrada de um aplicativo C#, exceto em Bibliotecas e Serviços.
 - `static` 
   - Pertence a classe Principal
 - `void` 
@@ -46,18 +46,13 @@
 ```cs
   using System;
 
-  namespace Aula02
-  {
-    class Program
-    {
-      static void Main(string[] args)
-      {
+  namespace Aula02{
+    class Program{
+      static void Main(string[] args){
         Console.WriteLine("Hello, World!");
-        if(args.GetLength(0)>0)
-        {
+        if(args.GetLength(0)>0){
           Console.Write(args.GetValue(0));
         }
-    
       }
     }
   }
@@ -71,7 +66,7 @@
 - `Var` 
   - Operador
   - Não é tipada
-  - Recebe a tipagem na atribuição
+  - Mas, pode Receber a tipagem na atribuição
   - Excessão:
     - Ex: `var aux = nome;` O seu valor é capturado da variável `nome `do Tipo String.
   - Não pode ser alterada depois.
@@ -136,17 +131,17 @@
 ```cs
   using System;
 
-class Aula03{
-  static void Main(){
-    int num1, num2, res;
+  class Aula03{
+    static void Main(){
+      int num1, num2, res;
 
-    num1=10;
-    num2=2;
-    res = num1 * num2;
+      num1=10;
+      num2=2;
+      res = num1 * num2;
 
-    Console.WriteLine("A multiplicação de " + num1 + " Com " + num2 + " é igual a: " + res);
+      Console.WriteLine("A multiplicação de " + num1 + " Com " + num2 + " é igual a: " + res);
+    }
   }
-}
 ```
 ---
 
@@ -174,5 +169,40 @@ class Aula03{
     }
   }
 ```
+# Aula 05
+
+## Operadores e Operações
+
+- Categorias
+  - Matemáticos
+    - `+` 
+    - `-`
+    - `*`
+    - `/`
+  - Lógicos
+  - `|` OR / OU
+      - Retorna False, se todas as comparações forem falsa
+    - `<` Menor
+    - `>` Maior
+    - `<=` Maior ou Igual
+    - `>=` Menor ou Igual
+    - `!=` Diferente
+    - `=` Igual  
+  - Relacionais ou Comparação
+    - `bool`
+      - Verdadeiro ou Falso
+      - Ex: 1 e 0 
+        - 1 = true
+        - 0 = false
+    - `=`
+  - Bitwise
+    - `&` AND / E
+      - Retorna True, se todas as comparações forem verdadeira
+  - Negação
+  - Incremento
+    - `++`
+    - `+=`
+  - E com certeza existem mais na linguagem
+
 
 🚧 Em Desenvolvimento 📚
