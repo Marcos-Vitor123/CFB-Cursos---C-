@@ -251,4 +251,22 @@
   }
 ```
 
+## Código implementado para fins didáticos
+
+```cs
+  Console.WriteLine("\n\tCálculo de lucro\t\n\nProduto.......:{0,15}\nVal.Compra....:{1,15:c}\nLucro.........:{2,15:p}\nVal.Venda.....:{3,15:c}",produto,valorCompra,lucro,valorVenda);
+```
+### Saída no Console
+
+```console
+  
+        Cálculo de lucro
+
+Produto.......:         Pastel
+Val.Compra....:        R$ 5,50
+Lucro.........:         10.00%
+Val.Venda.....:        R$ 6,05
+
+```
+
 🚧 Em Desenvolvimento 📚
