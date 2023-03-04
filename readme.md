@@ -31,6 +31,10 @@
 ## Aula 02
 - **Instalação .NET**
   - Comando cmd `dotnet new console`
+- Compilar o programa
+  - `csc` + `nome-do-programa.cs`
+- Executar o programa
+  - `nome-do-programa` e presione Enter
 - `string[] args` 
   - Padrão de argumentos de entrada
 - `namespace` 
@@ -100,6 +104,17 @@
   - Primitivo
   - Ex: `5.3f`
   - `f` indica padrão float
+  - Suporta menos casas decimal
+  - 6 a 9 dígitos
+  - 4 bytes
+- `double`
+  - Tipo float
+  - Suporta mais casas decimal
+  - 15 a 17 dígitos
+  - 8 bytes
+- `decimal`
+  - 28 a 29 dígitos
+  - 16 bytes
 - `string` 
   - Tipo referência
   - Conjunto caracteres `char`
@@ -204,5 +219,36 @@
     - `+=`
   - E com certeza existem mais na linguagem
 
+# Aula 06
+
+## Formatando a saída no console
+
+- `\n` Pula para linha de baixo
+- `\t` Dá um espaço Tab
+  - `{0,15}`
+    - `0` É o índice
+    - `,` Separador
+    - `15` Tamanho do espaço Tab, entre a string e a variável do índice indicado 
+
+```cs
+  using System;
+
+  class aula06 {
+    static void Main() {
+      double valorCompra=5.50;
+      double valorVenda;
+      double lucro=0.1;
+      string produto="Pastel";
+
+      valorVenda=valorCompra+(valorCompra*lucro);
+
+      Console.WriteLine("Produto.......:{0,15}",produto);
+      Console.WriteLine("Val.Compra....:{0,15:c}",valorCompra);
+      Console.WriteLine("Lucro.........:{0,15:p}",lucro);
+      Console.WriteLine("Val.Venda.....:{0,15:c}",valorVenda);
+
+    }
+  }
+```
 
 🚧 Em Desenvolvimento 📚
